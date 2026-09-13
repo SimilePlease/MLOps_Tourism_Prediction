@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 RAW_PATH = "/content/drive/MyDrive/Colab_Notebooks/Walsh_University/Project_2_MLOps/data/tourism.cvs"  # complete the code: path to the raw tourism.csv file inside the data folder
 
@@ -26,5 +27,5 @@ if os.path.exists(RAW_PATH):
     print("ProdTaken distribution:")
     print(df["ProdTaken"].value_counts())
 
-else : 
+else :
     print("Data Files Does Not exist")
