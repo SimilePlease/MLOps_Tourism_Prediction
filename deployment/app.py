@@ -63,7 +63,7 @@ classification_threshold = 0.45
 if st.button("Predict"):
     prob = model.predict_proba(input_data)[0,1]
     pred = int(prob >= classification_threshold)
-  st.write(f"Purchase probability: {prob:.2%}")
+    st.write(f"Purchase probability: {prob:.2%}")
     st.write(f"Classification threshold: {classification_threshold:.0%}")
 
     result = (
